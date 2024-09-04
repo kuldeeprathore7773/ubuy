@@ -1,47 +1,97 @@
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #E8E8E9;
 }
 
 .container {
   width: 100%;
+  max-width: 1181px;
   margin: 0 auto;
 }
 
 /* Header Section */
-.header {
+
+.header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
+.header-main .header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-.navbar ul {
+.header-main .header-left .header-main-logo {
+  width: 82px;
+  height: 82px;
+}
+.header-main .header-left .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding-left: 0;
+  margin: 0;
 }
 
-.navbar ul li a {
+.header-main .header-left .navbar ul  li a {
   text-decoration: none;
-  color: #000;
+  color: #EC68A5;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.auth-buttons button {
+.header-shape img {
+  margin-top: -40px;
+  overflow: hidden;
+}
+
+.header-right button {
   margin-left: 10px;
 }
 
+.btn-light {
+  border: 3px solid RGBA(34, 85, 177, 1);
+  padding: 5px 30px;
+  border-radius: 25px;
+  font-size: 12px;
+  color: #2255B1;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  color: #E6E6E8;
+  background: RGBA(34, 85, 177, 1);
+}
+
+.btn-dark {
+  border: 3px solid RGBA(34, 85, 177, 1);
+  padding: 5px 30px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #E6E6E8;
+  background: RGBA(34, 85, 177, 1);
+}
+
+.btn-dark:hover {
+
+  color: #2255B1;
+  background: transparent;
+}
+
+
+
 /* Hero Section */
+
 .hero {
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  background-color: #f0f0f0;
+  background-color: #E8E8E9;
 }
 
 .hero-text {
@@ -81,7 +131,7 @@ body {
 
 /* Latest News Section */
 .latest-news {
-  background-color: #e6e6e6;
+  background-color: #E8E8E9;
   padding: 50px;
 }
 

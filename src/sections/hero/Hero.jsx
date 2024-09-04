@@ -1,9 +1,12 @@
+import heroTitle from "../../assets/img/hero banner title.svg";
+import heroShape from "../../assets/img/hero Shape.svg";
+
 function Hero(){
     return(
         <>
         <section className="hero">
         <div className="hero-text">
-          <h1>Made for Founders</h1>
+          <h1><img src={heroTitle} alt="" srcset="" /></h1>
           <div className="services">
             <div className="service">
               <h2>Business Capital</h2>
@@ -18,7 +21,7 @@ function Hero(){
           </div>
         </div>
         <div className="hero-image">
-          <img src="#"/>
+          <img src={heroShape}/>
         </div>
       </section>
       </>
