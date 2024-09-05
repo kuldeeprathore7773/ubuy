@@ -536,25 +536,6 @@ h1.wave-text.transparent {
   transform: rotate(-10deg) translateY(-2px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media query  */
 
 @media (max-width: 1200px) {
@@ -724,7 +705,7 @@ h1.wave-text.transparent {
   }
 
   .hero-text .text-container {
-    max-width: 90%;
+    max-width: 84%;
   }
 
   h1.wave-text.transparent {
@@ -746,4 +727,8 @@ h1.wave-text.transparent {
     font-size: 26px;
     line-height: 36px;
   }
+
+  button {
+    font-size: 10px !important;
+  } 
 }
