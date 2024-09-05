@@ -49,7 +49,7 @@ body:before {
   padding: 5px 30px;
   border-radius: 25px;
   font-size: 12px;
-  color: #2255b1;
+  color: #0d66bd;
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ body:before {
 }
 
 .btn-dark:hover {
-  color: #2255b1;
+  color: #0d66bd;
   background: transparent;
 }
 
@@ -205,7 +205,7 @@ button.owl-btn {
 
 .service p {
   margin: 0;
-  color: #2255b1;
+  color: #0d66bd;
   padding: 16px 0 14px 0px;
   font-size: 10px;
 }
@@ -229,7 +229,7 @@ button.owl-btn {
   rotate: 90deg;
   top: 0;
   max-height: 182px;
-  color: #2255b1;
+  color: #0d66bd;
   line-height: 16px;
 }
 
@@ -389,7 +389,7 @@ section.what-we-do p {
 .more-than-money {
   text-align: center;
   padding: 50px;
-  background-color: #0033cc;
+  background-color: #0d66bd;
   color: white;
 }
 
@@ -464,6 +464,99 @@ section.what-we-do p {
   rotate: -14deg;
 }
 
+/* wave effect text  */
+
+.text-container {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.wave-text {
+  font-size: 50px;
+  color: #0d66bd;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+h1.wave-text.transparent {
+  color: transparent;
+  -webkit-text-stroke: 1px #0e5da9;
+}
+
+.wave-text span {
+  display: inline-block;
+  transform-origin: bottom center;
+  padding-right: 4px;
+}
+
+.wave-text .space {
+  padding: 0 15px;
+}
+
+.wave-text span:nth-child(1) {
+  transform: rotate(-15deg) translateY(18px);
+}
+
+.wave-text span:nth-child(2) {
+  transform: rotate(-12deg) translateY(0px);
+}
+
+.wave-text span:nth-child(3) {
+  transform: rotate(-3deg) translateY(-8px);
+}
+
+.wave-text span:nth-child(4) {
+  transform: rotate(6deg) translateY(-10px);
+}
+
+.wave-text span:nth-child(5) {
+  transform: rotate(10deg) translateY(-10px);
+}
+
+.wave-text span:nth-child(6) {
+  transform: rotate(8deg) translateY(-2px);
+}
+
+.wave-text span:nth-child(7) {
+  transform: rotate(6deg) translateY(4px);
+}
+.wave-text span:nth-child(8) {
+  transform: rotate(-3deg) translateY(3px);
+}
+
+.wave-text span:nth-child(9) {
+  transform: rotate(4deg) translateY(4px);
+}
+.wave-text span:nth-child(10) {
+  transform: rotate(-6deg) translateY(2px);
+}
+
+.wave-text span:nth-child(11) {
+  transform: rotate(-10deg) translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+
 @media (max-width: 1200px) {
   .container {
     max-width: 95%;
@@ -474,8 +567,8 @@ section.what-we-do p {
   }
 
   .hero-text h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 38px;
+    line-height: 48px;
   }
 
   section.what-we-do h2 {
@@ -564,9 +657,15 @@ section.what-we-do p {
     display: none;
   }
 
-  section.latest-news h2 img {
-    max-width: 95%;
+  .wave-text .space {
+    padding: 0 7px;
   }
+
+  .latest-news h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   .news-items {
     grid-template-columns: 1fr;
   }
@@ -622,5 +721,29 @@ section.what-we-do p {
   .hero-banner-rotate-text {
     top: unset;
     bottom: 20%;
+  }
+
+  .hero-text .text-container {
+    max-width: 90%;
+  }
+
+  h1.wave-text.transparent {
+    margin-right: 15px;
+  }
+
+  .news-items {
+    padding: 0px 0 40px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .latest-news h2 {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
