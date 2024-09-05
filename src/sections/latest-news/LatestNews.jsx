@@ -7,8 +7,9 @@ function LatestNews() {
   return (
     <section className="latest-news">
       <div className="container">
-        <img src={latestNews} alt="" srcset="" />
 
+        <h2> <img src={latestNews} alt="" srcset="" /> </h2>
+       
         <div className="news-items">
           <div className="news-item">
             <img className="news-blog-img" src={newsImg1} alt="News 1" />

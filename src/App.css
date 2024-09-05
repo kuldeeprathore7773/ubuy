@@ -398,6 +398,7 @@ section.what-we-do p {
   display: flex;
   justify-content: space-between;
   align-items: self-end;
+  flex-wrap: wrap;
 }
 
 .what-we-believe-inner h2 {
@@ -551,5 +552,75 @@ section.what-we-do p {
 
   .hero-text h1 img {
     width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  nav.navbar {
+    display: none;
+  }
+
+  .header-shape {
+    display: none;
+  }
+
+  section.latest-news h2 img {
+    max-width: 95%;
+  }
+  .news-items {
+    grid-template-columns: 1fr;
+  }
+
+  .what-we-believe-inner h2 {
+    max-width: 100%;
+  }
+
+  .what-we-believe-inner .hero-image {
+    width: 100%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-banner-rotate-text-left {
+    bottom: unset;
+    top: 27%;
+    right: -52px;
+    left: unset;
+    width: 180px;
+    max-height: 50px;
+  }
+
+  section.what-we-do p {
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
+
+  section.what-we-do h2 {
+    max-width: 95%;
+  }
+
+  .what-we-do:after {
+    width: 95px;
+    height: 95px;
+  }
+
+  .what-we-do:before {
+    width: 95px;
+    height: 95px;
+  }
+
+  .what-we-do-batch {
+    left: 70px;
+  }
+
+  .hero-inner {
+    flex-wrap: wrap;
+  }
+
+  .hero-banner-rotate-text {
+    top: unset;
+    bottom: 20%;
   }
 }

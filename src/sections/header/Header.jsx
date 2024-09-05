@@ -9,20 +9,20 @@ function Header() {
         <div className="container">
           <div className="header-main">
             <div className="header-left">
-              <img className="header-main-logo" src={logo} />
+              <a href="/"><img className="header-main-logo" src={logo} /></a>
               <nav className="navbar">
                 <ul>
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="#">Home</a>
                   </li>
                   <li>
-                    <a href="#companies">Companies</a>
+                    <a href="#">Companies</a>
                   </li>
                   <li>
-                    <a href="#investors">Investors</a>
+                    <a href="#">Investors</a>
                   </li>
                   <li>
-                    <a href="#contact">Contact Us</a>
+                    <a href="#">Contact Us</a>
                   </li>
                 </ul>
               </nav>
